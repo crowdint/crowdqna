@@ -46,6 +46,7 @@ GEM
     childprocess (0.1.7)
       ffi (~> 0.6.3)
     culerity (0.2.15)
+    database_cleaner (0.6.5)
     devise (1.1.7)
       bcrypt-ruby (~> 2.1.2)
       warden (~> 1.0.2)
@@ -145,6 +146,7 @@ PLATFORMS
 DEPENDENCIES
   bson_ext
   capybara
+  database_cleaner
   devise
   devise_rpx_connectable
   haml (>= 3.0.0)
