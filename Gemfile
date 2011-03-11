@@ -37,3 +37,9 @@ gem "haml", ">= 3.0.0"
 gem "haml-rails"
 gem "bson_ext"
 gem "jquery-rails"
+gem "devise_rpx_connectable"
+
+group :development do
+  gem "hpricot"
+  gem "ruby_parser"
+end
