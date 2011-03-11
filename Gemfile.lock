@@ -45,6 +45,8 @@ GEM
     celerity (0.8.8)
     childprocess (0.1.7)
       ffi (~> 0.6.3)
+    compass (0.10.6)
+      haml (>= 3.0.4)
     culerity (0.2.15)
     database_cleaner (0.6.5)
     devise (1.1.7)
@@ -146,6 +148,7 @@ PLATFORMS
 DEPENDENCIES
   bson_ext
   capybara
+  compass
   database_cleaner
   devise
   devise_rpx_connectable
