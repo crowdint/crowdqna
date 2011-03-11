@@ -1,0 +1,8 @@
+infinity_test do
+	before_run do
+		clear :terminal
+	end
+
+  use :app_framework => :rails, :test_framework => :rspec
+	notifications :growl
+end
