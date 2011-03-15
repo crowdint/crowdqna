@@ -39,6 +39,7 @@ gem "compass"
 gem "bson_ext"
 gem "jquery-rails"
 gem "devise_rpx_connectable"
+gem "infinity_test"
 
 group :development do
   gem "hpricot"
