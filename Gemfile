@@ -42,6 +42,7 @@ gem "devise_rpx_connectable"
 gem "infinity_test"
 gem "simple_form"
 gem "inherited_resources"
+gem "fabrication"
 
 group :development do
   gem "hpricot"
@@ -50,4 +51,5 @@ end
 
 group :test do
   gem "database_cleaner"
+  gem "faker"
 end
