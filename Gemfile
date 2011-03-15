@@ -40,6 +40,8 @@ gem "bson_ext"
 gem "jquery-rails"
 gem "devise_rpx_connectable"
 gem "infinity_test"
+gem "simple_form"
+gem "inherited_resources"
 
 group :development do
   gem "hpricot"
