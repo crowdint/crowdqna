@@ -30,10 +30,13 @@ feature "Post Questions", %q{
   end
 
   scenario "Question index page" do
-    question = Fabricate(:question)
+    answer   = Fabricate(:answer)
+    question = answer.question
 
     visit questions_path
 
     page.has_content?(question.question_text).should be_true
+    page.has_content?(answer.answer_text).should be_true
+    page.has_content?(answer.author_email).should be_true
   end
 end
