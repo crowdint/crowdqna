@@ -52,4 +52,5 @@ end
 group :test do
   gem "database_cleaner"
   gem "faker"
+  gem "launchy"
 end

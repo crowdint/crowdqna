@@ -1,0 +1,5 @@
+%h1 Questions#new
+= form_for @question do |f|
+  = f.label :question_text, 'Question'
+  = f.text_field :question_text
+  = f.submit 'Submit'
