@@ -5,4 +5,9 @@ class Question
   # Fields
   #
   field :question_text, type: String
+
+  #
+  # Associations
+  #
+  embeds_many :answers
 end

@@ -5,6 +5,12 @@ TrustTheCrowd::Application.routes.draw do
 
   resources :questions
 
+  namespace :admin do
+    resources :questions, :only => :index do
+      resources :answers
+    end
+  end
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

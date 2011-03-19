@@ -6,4 +6,5 @@ class User
          :recoverable, :rememberable, :trackable, :rpx_connectable
 
   field :name, :type => String
+
 end

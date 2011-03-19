@@ -1,0 +1,5 @@
+%h2= @question.question_text
+
+= link_to 'Back', admin_questions_path
+= link_to 'Answer', new_admin_question_answer_path(question_id: @question.to_param)
+=render @answers
