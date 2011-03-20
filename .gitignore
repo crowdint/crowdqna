@@ -5,3 +5,4 @@ tmp/
 .rvmrc
 .sass-cache
 coverage
+.DS_Store
