@@ -7,7 +7,7 @@ TrustTheCrowd::Application.routes.draw do
 
   namespace :admin do
     root :to => "questions#index"
-    resources :questions, :only => :index do
+    resources :questions, only: [:index, :destroy] do
       resources :answers
     end
   end
