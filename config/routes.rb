@@ -1,4 +1,4 @@
-TrustTheCrowd::Application.routes.draw do
+CrowdQna::Application.routes.draw do
   devise_for :users
 
   root :to => "questions#index"

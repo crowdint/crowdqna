@@ -4,4 +4,4 @@
 require File.expand_path('../config/application', __FILE__)
 require 'rake'
 
-TrustTheCrowd::Application.load_tasks
+CrowdQna::Application.load_tasks
