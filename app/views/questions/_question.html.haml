@@ -5,4 +5,4 @@
       %div
         = answer.answer_text
         %b= answer.author_email
-  %td= question.created_at
+  %td= question.created_at.to_s(:long)
