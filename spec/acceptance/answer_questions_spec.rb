@@ -37,6 +37,7 @@ feature "Answer Questions", %q{
     answer.answer_text.should  == answer_attributes[:answer_text]
     current_path.should        == admin_question_answers_path(question_id: question.to_param)
     answer.author_email.should == @user.email
+    answer.created_at.should_not be_nil
 
     page.has_content?(answer_attributes[:answer_text]).should be_true
     page.has_content?(@user.email).should be_true
