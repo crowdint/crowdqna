@@ -1,5 +1,12 @@
-%h1 Questions
+#title
+  %h1 Questions
+#indexlinks
+  = link_to 'Post a question', new_question_path
 
-= link_to 'Post a question', new_question_path
-
-= render @questions
+#table
+  %table
+    %tr.header
+      %th
+      %th
+      %th
+    = render @questions

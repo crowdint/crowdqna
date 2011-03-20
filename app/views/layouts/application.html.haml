@@ -1,7 +1,7 @@
 !!!
 %html
   %head
-    %title TrustTheCrowd
+    %title CI QNA
     = stylesheet_link_tag :all
     = javascript_include_tag :defaults
     = csrf_meta_tag
@@ -11,4 +11,15 @@
       = stylesheet_link_tag 'ie.css', :media => 'screen, projection'
 
   %body
-    .container.showgrid= yield
+    %div{:class => (RAILS_ENV == 'development' ? 'container showgrid' : 'container')}
+      #header
+        = link_to image_tag('crowdint.png'), :root
+        #bar
+          .text= "&nbsp;"
+      #content
+        - if flash[:notice]
+          #notice
+            = flash[:notice]
+        = yield
+      #footer
+        != render :partial => '/layouts/footer'

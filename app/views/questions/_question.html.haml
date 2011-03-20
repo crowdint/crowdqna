@@ -1,4 +1,5 @@
-= question.question_text
-- question.answers.each do |answer|
-  = answer.answer_text
-  = answer.author_email
+%tr= question.question_text
+%tr
+  - question.answers.each do |answer|
+    = answer.answer_text
+    = answer.author_email
