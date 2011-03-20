@@ -13,7 +13,7 @@ Bundler.require(:default, Rails.env) if defined?(Bundler)
 
 module CrowdQna
   class Application < Rails::Application
-  
+
 config.action_view.javascript_expansions[:defaults] = %w(jquery rails)
 
     # Settings in config/environments/* take precedence over those specified here.
