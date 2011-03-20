@@ -8,11 +8,11 @@ defaults: &defaults
 
 development:
   <<: *defaults
-  database: trust_the_crowd_development
+  database: crowdqna_development
 
 test:
   <<: *defaults
-  database: trust_the_crowd_test
+  database: crowdqna_test
 
 # set these environment variables on your prod server
 production:
