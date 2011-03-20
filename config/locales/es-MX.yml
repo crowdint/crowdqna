@@ -29,7 +29,7 @@ es-MX:
       index:
         title: Preguntas que han hecho
         question: Pregunta
-        answer: Respuesta
+        answers: Respuestas
         posted_at: Fecha
         actions: Acciones
         answer_now: Contestar
