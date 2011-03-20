@@ -39,20 +39,20 @@ gem "compass"
 gem "bson_ext"
 gem "jquery-rails"
 gem "devise_rpx_connectable"
-gem "infinity_test"
 gem "simple_form"
 gem "inherited_resources"
 gem "fabrication"
-gem "heroku"
 gem "hassle"
 
 group :development do
   gem "hpricot"
   gem "ruby_parser"
+  gem "heroku", "~>1.18.3"
 end
 
 group :test do
   gem "database_cleaner"
   gem "faker"
-  gem "launchy"
+  gem "launchy", "~>0.3.2"
+  gem "infinity_test"
 end
