@@ -10,6 +10,6 @@ class QuestionsController < ApplicationController
   end
 
   def collection
-    @questions ||= end_of_association_chain.where(answered: true)
+    @questions ||= end_of_association_chain.where(answered: true).descending(:created_at)
   end
 end
