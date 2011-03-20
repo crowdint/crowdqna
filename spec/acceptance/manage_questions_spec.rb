@@ -9,7 +9,7 @@ feature "Manage Questions", %q{
   include Warden::Test::Helpers
 
   background do
-    @user = Fabricate(:user)
+    @user = Fabricate(:admin)
     login_as @user
   end
 
