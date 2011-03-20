@@ -5,6 +5,9 @@ class User
   devise :database_authenticatable,
          :recoverable, :rememberable, :trackable, :rpx_connectable
 
+  #
+  # Fields
+  #
   field :name, :type => String
 
 end

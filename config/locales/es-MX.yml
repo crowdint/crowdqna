@@ -174,3 +174,7 @@ es-MX:
         accepted: "debe ser aceptado"
         even: "debe ser un número par"
         odd: "debe ser un número non"
+  devise:
+    sessions:
+      user:
+        signed_in: Bienvenido
