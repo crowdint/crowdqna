@@ -43,6 +43,8 @@ gem "infinity_test"
 gem "simple_form"
 gem "inherited_resources"
 gem "fabrication"
+gem "heroku"
+gem "hassle"
 
 group :development do
   gem "hpricot"
