@@ -142,3 +142,4 @@ Devise.setup do |config|
   config.rpx_application_name = "crowdint"
 end
 RPXNow.api_key = ENV['RPX_API_KEY']
+RPXNow.email_regexp = %r{@crowdint.com$}

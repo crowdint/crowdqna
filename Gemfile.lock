@@ -137,6 +137,8 @@ GEM
       mime-types (>= 1.16)
     rpx_now (0.6.24)
       json_pure
+    rpx_regexp (0.0.1)
+      rpx_now
     rspec (2.5.0)
       rspec-core (~> 2.5.0)
       rspec-expectations (~> 2.5.0)
@@ -196,6 +198,7 @@ DEPENDENCIES
   launchy (~> 0.3.2)
   mongoid (>= 2.0.0.beta.19)
   rails (= 3.0.5)
+  rpx_regexp
   rspec-rails (>= 2.0.1)
   ruby_parser
   simple_form
