@@ -20,7 +20,7 @@ feature "Post Questions", %q{
     click_link I18n.t('questions.index.new')
 
     fill_in 'question_question_text', with: question_attributes[:question_text]
-    click_button 'Submit'
+    click_button I18n.t('common.submit')
 
     Question.count.should == 1
     question = Question.last

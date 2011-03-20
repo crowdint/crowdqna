@@ -28,7 +28,7 @@ feature "Answer Questions", %q{
     click_link I18n.t('admin.answers.index.answer_question')
 
     fill_in 'Answer', with: answer_attributes[:answer_text]
-    click_button 'Submit'
+    click_button I18n.t('common.submit')
 
     question.reload
     answer = question.answers.first

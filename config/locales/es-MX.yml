@@ -6,6 +6,8 @@
 # by Daniel Roux ( daniel.roux@gmail.com)
 
 es-MX:
+  common:
+    submit: Enviar
   questions:
     index:
       title: Foro de Preguntas y Respuestas
