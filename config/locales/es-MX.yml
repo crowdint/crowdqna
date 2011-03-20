@@ -9,7 +9,7 @@ es-MX:
   common:
     submit: Enviar
     delete: Eliminar
-    confirm: Est&aacute;s seguro?
+    confirm: Estás seguro?
   questions:
     index:
       title: Foro de Preguntas y Respuestas
