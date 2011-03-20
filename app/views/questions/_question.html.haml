@@ -1,6 +1,8 @@
-%tr= question.question_text
 %tr
-  - question.answers.each do |answer|
-    = answer.answer_text
-    = answer.author_email
-%tr= question.created_at
+  %td= question.question_text
+  %td
+    - question.answers.each do |answer|
+      %div
+        = answer.answer_text
+        %b= answer.author_email
+  %td= question.created_at
