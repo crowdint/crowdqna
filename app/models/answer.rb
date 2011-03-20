@@ -17,4 +17,14 @@ class Answer
   # Validations
   #
   validates_presence_of :answer_text
+
+  #
+  # Callbacks
+  #
+  after_destroy :update_question_answered
+
+  private
+  def update_question_answered
+    question.update_answered
+  end
 end

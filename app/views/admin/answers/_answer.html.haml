@@ -2,4 +2,4 @@
   %td= answer.answer_text
   %td= answer.author_email
   %td= answer.created_at.to_s(:long)
-
+  %td= link_to t('common.delete'), admin_question_answer_path(question_id: answer.question.to_param, id: answer.to_param), :method => :delete, confirm: t('common.confirm')

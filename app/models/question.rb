@@ -21,4 +21,8 @@ class Question
   def answer_count
     answers.count
   end
+
+  def update_answered
+    update_attributes(:answered => (answer_count > 0))
+  end
 end

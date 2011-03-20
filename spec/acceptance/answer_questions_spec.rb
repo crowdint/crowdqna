@@ -45,4 +45,19 @@ feature "Answer Questions", %q{
     click_link I18n.t('admin.answers.index.back')
     current_path.should == admin_questions_path
   end
+
+  scenario "Delete a question" do
+    answer   = Fabricate(:answer)
+    question = answer.question
+
+    visit admin_question_answers_path(question_id: question.to_param)
+
+    click_link I18n.t('common.delete')
+
+    current_path.should == admin_question_answers_path(question_id: question.to_param)
+
+    question.reload
+    question.answers.count.should == 0
+    question.answered.should      be_false
+  end
 end

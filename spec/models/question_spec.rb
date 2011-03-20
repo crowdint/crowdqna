@@ -25,4 +25,26 @@ describe Question do
       end
     end
   end
+
+  describe "#update_answered" do
+    context "the question has no answers" do
+      it "sets answered to false" do
+        @question.update_answered
+        @question.answered.should be_false
+      end
+    end
+
+    context "the question has answers" do
+      before :each do
+        3.times do
+          @question.answers.build(Fabricate.attributes_for(:answer))
+        end
+        @question.save!
+      end
+      it "sets answered to true" do
+        @question.update_answered
+        @question.answered.should be_true
+      end
+    end
+  end
 end
