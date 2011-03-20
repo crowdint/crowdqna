@@ -42,7 +42,7 @@ gem "devise_rpx_connectable"
 gem "simple_form"
 gem "inherited_resources"
 gem "fabrication"
-gem "hassle"
+gem "hassle", :git => 'https://github.com/koppen/hassle.git'
 
 group :development do
   gem "hpricot"

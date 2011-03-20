@@ -1,3 +1,11 @@
+GIT
+  remote: https://github.com/koppen/hassle.git
+  revision: bb49cd8b37f5369d08398897caf1b687eaa80458
+  specs:
+    hassle (0.0.1)
+      haml
+      rack
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -71,9 +79,6 @@ GEM
       haml (~> 3.0)
       railties (~> 3.0)
     has_scope (0.5.0)
-    hassle (0.0.1)
-      haml
-      rack
     heroku (1.18.3)
       launchy (~> 0.3.2)
       rest-client (< 1.7.0, >= 1.4.0)
@@ -182,7 +187,7 @@ DEPENDENCIES
   faker
   haml (>= 3.0.0)
   haml-rails
-  hassle
+  hassle!
   heroku (~> 1.18.3)
   hpricot
   infinity_test
