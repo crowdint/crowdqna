@@ -15,7 +15,12 @@
       #header
         = link_to image_tag('crowdint.png'), :root
         #bar
-          .text= raw("&nbsp;")
+          .text
+            - if current_user
+              = current_user.email
+              = link_to 'Sign Out', destroy_user_session_path
+            - else
+              &nbsp;
       #content
         - if flash[:notice]
           #notice
