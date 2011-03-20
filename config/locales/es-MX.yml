@@ -40,6 +40,10 @@ es-MX:
       destroy:
         flash: La pregunta fu&eacute; eliminada
     answers:
+      index:
+        back: Regresar
+        answer_question: Responde la pregunta
+        answer: Respuesta
       new:
         title: Responde!
         submit: Enviar respuesta

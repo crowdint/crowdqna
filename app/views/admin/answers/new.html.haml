@@ -1,7 +1,9 @@
-%h2= @question.question_text
+#title
+  %h1= @question.question_text
 
-= form_for [ :admin, @question, @answer] do |form|
-  = form.label :answer_text, 'Answer'
-  = form.text_field :answer_text
+#form
+  = form_for [ :admin, @question, @answer] do |form|
+    %div= form.label :answer_text, 'Answer'
+    %div= form.text_area :answer_text
 
-  = form.submit 'Submit'
+    = form.submit 'Submit'

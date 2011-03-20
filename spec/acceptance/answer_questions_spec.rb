@@ -21,11 +21,11 @@ feature "Answer Questions", %q{
 
     page.has_content?(question.question_text).should be_true
 
-    click_link 'Answers'
+    click_link I18n.t('admin.questions.index.answers')
 
     current_path.should == admin_question_answers_path(question_id: question.to_param)
 
-    click_link 'Answer'
+    click_link I18n.t('admin.answers.index.answer_question')
 
     fill_in 'Answer', with: answer_attributes[:answer_text]
     click_button 'Submit'
@@ -41,7 +41,7 @@ feature "Answer Questions", %q{
     page.has_content?(answer_attributes[:answer_text]).should be_true
     page.has_content?(@user.email).should be_true
 
-    click_link 'Back'
+    click_link I18n.t('admin.answers.index.back')
     current_path.should == admin_questions_path
   end
 end

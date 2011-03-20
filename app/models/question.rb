@@ -17,4 +17,8 @@ class Question
   # Validations
   #
   validates_presence_of :question_text
+
+  def answer_count
+    answers.count
+  end
 end
