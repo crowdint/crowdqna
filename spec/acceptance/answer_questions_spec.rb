@@ -33,6 +33,7 @@ feature "Answer Questions", %q{
     question.reload
     answer = question.answers.first
 
+    question.answered.should   == true
     answer.answer_text.should  == answer_attributes[:answer_text]
     current_path.should        == admin_question_answers_path(question_id: question.to_param)
     answer.author_email.should == @user.email

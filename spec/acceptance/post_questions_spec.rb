@@ -29,14 +29,18 @@ feature "Post Questions", %q{
     current_path.should == questions_path
   end
 
-  scenario "Question index page" do
+  scenario "Question index page only shows answered questions" do
     answer   = Fabricate(:answer)
     question = answer.question
+
+    unanswered_question = Fabricate(:question)
 
     visit questions_path
 
     page.has_content?(question.question_text).should be_true
     page.has_content?(answer.answer_text).should be_true
     page.has_content?(answer.author_email).should be_true
+
+    page.has_content?(unanswered_question.question_text).should be_false
   end
 end

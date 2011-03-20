@@ -4,7 +4,8 @@ class Question
   #
   # Fields
   #
-  field :question_text, type: String
+  field :question_text , type: String
+  field :answered      , type: Boolean
 
   #
   # Associations

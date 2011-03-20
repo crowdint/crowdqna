@@ -8,4 +8,8 @@ class QuestionsController < ApplicationController
       format.html { redirect_to questions_path }
     end
   end
+
+  def collection
+    @questions ||= end_of_association_chain.where(answered: true)
+  end
 end
