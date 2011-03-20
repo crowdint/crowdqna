@@ -17,9 +17,9 @@ feature "Post Questions", %q{
     question_attributes = Fabricate.attributes_for(:question)
 
     visit '/'
-    click_link 'Post a question'
+    click_link I18n.t('questions.index.new')
 
-    fill_in 'Question', with: question_attributes[:question_text]
+    fill_in 'question_question_text', with: question_attributes[:question_text]
     click_button 'Submit'
 
     Question.count.should == 1

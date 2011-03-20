@@ -12,4 +12,9 @@ class Question
   # Associations
   #
   embeds_many :answers
+
+  #
+  # Validations
+  #
+  validates_presence_of :question_text
 end

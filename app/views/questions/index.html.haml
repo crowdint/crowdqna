@@ -1,12 +1,12 @@
 #title
-  %h1 Questions
+  %h1= t('questions.index.title')
 #indexlinks
-  = link_to 'Post a question', new_question_path
+  = link_to t('questions.index.new'), new_question_path
 
 #table
   %table
     %tr.header
-      %th
-      %th
-      %th
+      %th= t('questions.index.question')
+      %th= t('questions.index.answer')
+      %th= t('questions.index.posted_at')
     = render @questions
