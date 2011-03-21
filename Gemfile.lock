@@ -155,6 +155,7 @@ GEM
     ruby_parser (2.0.6)
       sexp_processor (~> 3.0)
     rubyzip (0.9.4)
+    sasha (0.1.1)
     selenium-webdriver (0.1.3)
       childprocess (~> 0.1.5)
       ffi (~> 0.6.3)
@@ -201,5 +202,6 @@ DEPENDENCIES
   rpx_regexp
   rspec-rails (>= 2.0.1)
   ruby_parser
+  sasha
   simple_form
   steak (>= 1.0.0.rc.1)

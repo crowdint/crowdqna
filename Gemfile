@@ -44,6 +44,7 @@ gem "inherited_resources"
 gem "fabrication"
 gem "hassle", :git => 'https://github.com/koppen/hassle.git'
 gem "rpx_regexp"
+gem "sasha"
 
 group :development do
   gem "hpricot"
