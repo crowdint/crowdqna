@@ -17,7 +17,11 @@
         #bar
           .text
             - if current_user
+              - if current_user.is_admin?
+                = link_to 'Contestar', admin_root_path
+                |
               = current_user.email
+              |
               = link_to 'Sign Out', destroy_user_session_path
             - else
               &nbsp;
