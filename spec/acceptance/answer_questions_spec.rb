@@ -21,7 +21,9 @@ feature "Answer Questions", %q{
 
     page.has_content?(question.question_text).should be_true
 
-    click_link I18n.t('admin.questions.index.answers')
+    within(:xpath, "//td[contains(., '#{question.question_text}')]/..") do
+      click_link I18n.t('admin.questions.index.answers')
+    end
 
     current_path.should == admin_question_answers_path(question_id: question.to_param)
 

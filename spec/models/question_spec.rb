@@ -47,4 +47,14 @@ describe Question do
       end
     end
   end
+
+  describe "#send_notification" do
+    it "Sends a mimi notification" do
+      madmimi = MadMimi.new('', '')
+      MadMimi.should_receive(:new).and_return(madmimi)
+      madmimi.should_receive(:send_mail).
+          with(instance_of(Hash), hash_including(question_text: @question.question_text))
+      @question.send_notification
+    end
+  end
 end
