@@ -8,5 +8,5 @@
     %tr.header
       %th= t('questions.index.question')
       %th= t('questions.index.answer')
-      %th= t('questions.index.posted_at')
+      %th{:width => 120}= t('questions.index.posted_at')
     = render @questions
