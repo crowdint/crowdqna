@@ -13,7 +13,7 @@ class User
   #
   # Allowed users
   #
-  ADMIN_USERS = ['david.padilla@crowdint.com', 'esteban.cortes@crowdint.com']
+  ADMIN_USERS = ['david.padilla@crowdint.com', 'esteban.cortes@crowdint.com', 'carlos.rocha@crowdint.com']
 
   def is_admin?
     ADMIN_USERS.include?(self.email)
